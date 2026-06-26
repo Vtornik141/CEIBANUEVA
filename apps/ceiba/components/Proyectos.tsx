@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { CeibaMark } from "./CeibaMark";
 import { Reveal } from "./Reveal";
 
 const IDENTIDAD_VISUAL = [
@@ -78,11 +77,6 @@ export function Proyectos() {
                 rel="noopener noreferrer"
                 className={`relative rounded-[18px] overflow-hidden min-h-[230px] flex flex-col justify-end p-7 text-white transition hover:-translate-y-[5px] bg-gradient-to-br ${p.gradient}`}
               >
-                <CeibaMark
-                  size={180}
-                  color="#fff"
-                  className="absolute -top-[30px] -right-[30px] opacity-[0.16]"
-                />
                 <span className="text-[0.72rem] tracking-[0.12em] uppercase font-semibold opacity-90">
                   Plataforma en vivo
                 </span>

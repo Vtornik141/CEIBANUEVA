@@ -42,7 +42,7 @@ export function Proceso() {
             Protocolo de ejecución
           </span>
           <h2 className="font-display font-bold tracking-[-0.02em] leading-[1.02] text-[clamp(2rem,4.4vw,3rem)]">
-            De la idea al activo, en una semana.
+            Activo operativo en 7 días
           </h2>
           <p className="mt-4 text-grafito-soft text-[1.05rem] max-w-[54ch]">
             Un proceso claro y sin fricción. Tú te enfocas en dirigir;

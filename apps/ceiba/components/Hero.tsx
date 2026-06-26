@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "./Reveal";
 
 const LINEAS = [
@@ -9,15 +8,7 @@ const LINEAS = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-6 pt-16 pb-14 md:pt-[104px] md:pb-24">
-      <Image
-        src="/logo-ceiba.png"
-        alt=""
-        aria-hidden="true"
-        width={420}
-        height={420}
-        className="absolute -top-10 -right-15 opacity-[0.07] pointer-events-none select-none"
-      />
+    <section className="px-6 pt-16 pb-14 md:pt-[104px] md:pb-24">
       <div className="max-w-[1180px] mx-auto">
         <Reveal className="mb-6 inline-flex items-center gap-3 font-display font-semibold text-[0.72rem] uppercase tracking-[0.28em] text-musgo">
           <span className="w-1.5 h-1.5 rounded-full bg-musgo" />

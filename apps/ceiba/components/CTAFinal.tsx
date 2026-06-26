@@ -6,7 +6,7 @@ export function CTAFinal() {
   return (
     <section className="bg-grafito text-crema">
       <Reveal strong className="max-w-[1180px] mx-auto px-6 py-24 text-center">
-        <h2 className="font-display font-bold leading-[1.05] text-[clamp(2rem,5vw,3.4rem)] max-w-[18ch] mx-auto mb-9">
+        <h2 className="font-playfair-display font-bold leading-[1.1] text-[clamp(2rem,5vw,3.4rem)] max-w-[18ch] mx-auto mb-9">
           Hablemos de tu próximo activo digital
         </h2>
         <a

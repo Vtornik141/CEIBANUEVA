@@ -62,8 +62,8 @@ export function Paquetes() {
           <span className="block mb-4 font-display font-semibold text-[0.72rem] uppercase tracking-[0.28em] text-musgo">
             Paquetes de servicio
           </span>
-          <h2 className="font-display font-bold tracking-[-0.02em] leading-[1.02] text-[clamp(2rem,4.4vw,3rem)]">
-            Una inversión, no un gasto.
+          <h2 className="font-playfair-display font-bold tracking-[-0.01em] leading-[1.1] text-[clamp(2rem,4.4vw,3rem)]">
+            Infraestructura que genera ROI
           </h2>
           <p className="mt-4 text-grafito-soft text-[1.05rem] max-w-[54ch] mx-auto">
             Tres niveles según la etapa de tu negocio. Todos incluyen el
