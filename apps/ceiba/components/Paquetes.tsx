@@ -1,4 +1,3 @@
-import { Megaphone } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const TIERS = [
@@ -6,7 +5,6 @@ const TIERS = [
     nombre: "Web Vitrina",
     para: "Presencia profesional para empezar en digital.",
     precio: "Q4,000",
-    precioAntes: "Q5,000",
     detalle: "+ Q600/mes · Entrega en 5 días",
     feats: [
       "Sitio web profesional",
@@ -23,7 +21,6 @@ const TIERS = [
     nombre: "Web PLUS",
     para: "Para negocios en crecimiento que quieren generar clientes.",
     precio: "Q6,500",
-    precioAntes: "Q7,700",
     detalle: "+ Q600/mes · Entrega en 6 días",
     feats: [
       "Todo lo de Vitrina, y además:",
@@ -40,7 +37,6 @@ const TIERS = [
     nombre: "Web Premium",
     para: "Automatización completa para escalar en serio.",
     precio: "Q10,000",
-    precioAntes: "Q13,590",
     detalle: "+ Q600/mes · Entrega en 7 días",
     feats: [
       "Todo lo de PLUS, y además:",
@@ -62,17 +58,6 @@ export function Paquetes() {
       className="py-16 md:py-24 px-6 bg-crema-soft border-y border-line"
     >
       <div className="max-w-[1180px] mx-auto">
-        <Reveal className="mb-10 max-w-[640px] mx-auto flex items-center justify-center gap-2.5 rounded-full bg-musgo/10 border border-musgo/25 px-5 py-2.5 text-center">
-          <Megaphone size={16} className="text-musgo shrink-0" />
-          <p className="text-[0.82rem] leading-snug text-grafito-soft">
-            <strong className="text-grafito font-semibold">
-              Oferta especial de lanzamiento:
-            </strong>{" "}
-            primeros 3 clientes en ceibagt.com a precio promocional. Después,
-            precio regular.
-          </p>
-        </Reveal>
-
         <Reveal className="mb-13 max-w-[60ch] mx-auto text-center">
           <span className="block mb-4 font-display font-semibold text-[0.72rem] uppercase tracking-[0.28em] text-musgo">
             Paquetes de servicio
@@ -102,10 +87,7 @@ export function Paquetes() {
                   Recomendado
                 </div>
               )}
-              <div className="absolute top-7 right-7 font-display font-semibold text-[1.5rem] text-grafito-soft/50 line-through">
-                {tier.precioAntes}
-              </div>
-              <div className="font-display font-bold text-[1.3rem] max-w-[70%]">{tier.nombre}</div>
+              <div className="font-display font-bold text-[1.3rem]">{tier.nombre}</div>
               <div className="text-[0.85rem] text-grafito-soft mt-1 min-h-[38px]">
                 {tier.para}
               </div>
