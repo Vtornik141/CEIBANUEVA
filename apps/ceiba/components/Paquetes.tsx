@@ -1,6 +1,21 @@
 import { Reveal } from "./Reveal";
 
-const TIERS = [
+type Tier = {
+  nombre: string;
+  para: string;
+  precio: string;
+  detalle: string;
+  feats: string[];
+  cta: string;
+  destacado: boolean;
+  promo?: {
+    cupos: string;
+    normal: string;
+    razon: string;
+  };
+};
+
+const TIERS: Tier[] = [
   {
     nombre: "Web Vitrina",
     para: "Presencia profesional para empezar en digital.",
@@ -36,7 +51,7 @@ const TIERS = [
   {
     nombre: "Web Premium",
     para: "Automatización completa para escalar en serio.",
-    precio: "Q10,000",
+    precio: "Q6,500",
     detalle: "+ Q600/mes · Entrega en 7 días",
     feats: [
       "Todo lo de PLUS, y además:",
@@ -48,6 +63,12 @@ const TIERS = [
     ],
     cta: "Agendar cita",
     destacado: false,
+    promo: {
+      cupos: "Primeras 3 clínicas / compraventas en asociarse",
+      normal: "Normalmente Q10,000",
+      razon:
+        "¿Por qué? Lanzamos dominio hace poco. Necesitamos 3 casos de estudio reales. Tú ganas automatización 24/7. Nosotros ganamos proof para escalar.",
+    },
   },
 ];
 
@@ -91,6 +112,27 @@ export function Paquetes() {
               <div className="text-[0.85rem] text-grafito-soft mt-1 min-h-[38px]">
                 {tier.para}
               </div>
+
+              {tier.promo && (
+                <div className="mt-4 rounded-xl border border-musgo/30 bg-musgo/10 px-4 py-3.5">
+                  <p
+                    className="text-[0.62rem] font-bold tracking-[0.18em] uppercase text-musgo mb-2"
+                    style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+                  >
+                    Promoción de lanzamiento
+                  </p>
+                  <p className="text-[0.82rem] font-semibold text-grafito mb-0.5">
+                    {tier.promo.cupos}
+                  </p>
+                  <p className="text-[0.78rem] text-grafito-soft mb-2.5">
+                    {tier.promo.normal}
+                  </p>
+                  <p className="text-[0.75rem] text-grafito-soft leading-[1.55] border-t border-musgo/20 pt-2.5">
+                    {tier.promo.razon}
+                  </p>
+                </div>
+              )}
+
               <div className="font-display font-bold text-[2.3rem] mt-[18px] mb-0.5">
                 {tier.precio}
               </div>
