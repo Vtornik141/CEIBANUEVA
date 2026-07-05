@@ -31,6 +31,7 @@ export function CeibaBrief({ embedded = false }: CeibaBriefProps) {
     setData((d) => ({ ...d, [k]: v }));
 
   useEffect(() => {
+    if (step < 0) return;
     topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [step]);
 
