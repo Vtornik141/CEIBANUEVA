@@ -19,7 +19,7 @@ const TIERS: Tier[] = [
   {
     nombre: "Web Vitrina",
     para: "Presencia profesional para empezar en digital.",
-    precio: "Q4,000",
+    precio: "Gratis",
     detalle: "+ Q600/mes · Entrega en 5 días",
     feats: [
       "Sitio web profesional",
@@ -31,6 +31,12 @@ const TIERS: Tier[] = [
     ],
     cta: "Agendar cita",
     destacado: false,
+    promo: {
+      cupos: "Primeros 2 clientes en asociarse con Ceiba",
+      normal: "Normalmente Q4,000",
+      razon:
+        "Necesitamos 2 casos de estudio reales. Tú ganas una web automática que vende 24/7.",
+    },
   },
   {
     nombre: "Web PLUS",
@@ -51,7 +57,7 @@ const TIERS: Tier[] = [
   {
     nombre: "Web Premium",
     para: "Automatización completa para escalar en serio.",
-    precio: "Q6,500",
+    precio: "Q10,000",
     detalle: "+ Q600/mes · Entrega en 7 días",
     feats: [
       "Todo lo de PLUS, y además:",
@@ -63,12 +69,6 @@ const TIERS: Tier[] = [
     ],
     cta: "Agendar cita",
     destacado: false,
-    promo: {
-      cupos: "Primeras 3 clínicas / compraventas en asociarse",
-      normal: "Normalmente Q10,000",
-      razon:
-        "¿Por qué? Lanzamos dominio hace poco. Necesitamos 3 casos de estudio reales. Tú ganas automatización 24/7. Nosotros ganamos proof para escalar.",
-    },
   },
 ];
 
